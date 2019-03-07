@@ -1,0 +1,203 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{padding:0;margin:0;}
+html,body{margin:0px;padding:0px;width:100%;min-height:100%;color:#333;font-family:"Microsoft YaHei", Arial, Helvetica, sans-serif;font-size:0.9em;position:relative;}
+img{display: block;border:0;position:relative;max-width:100%;}
+.clear{height:0px;line-height:0px;font-size: 0px;clear:both;visibility:hidden;overflow:hidden;padding:0;margin:0;}
+div,ul,dl,dd,dt,li,td,tr,table,p,span,h1,h2,h3,h4,h5,h6,form{margin:0px;padding:0px;list-style:none;list-style-type:none;word-wrap:break-word;position:relative;border:none;}
+a{display: block;color:#666;text-decoration:none;position:relative;cursor:pointer;}
+header,footer,nav,section,article,menu,aside{display:block;position:relative;} 
+textarea{resize:none;}
+i,em{font-style:normal;}
+strong{font-weight:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+th,td{text-align:left;}
+input,select,textarea{font-family:"Microsoft YaHei";}
+input:focus{outline: none;}
+select:focus{outline: none;}
+textarea:focus{outline: none;}
+/*去除ios默认input样式*/
+input[type="text"],input[type="password"],input[type="submit"],input[type="reset"], input[type="button"],button{font-family:"Microsoft YaHei";-webkit-appearance:none;appearance:none;outline:none;-webkit-tap-highlight-color:rgba(0,0,0,0);border-radius:0;}
+
+
+/*margin*/
+.mt0 {margin-top: 0;}
+.mt-2b {margin-top: 2%;}
+.mb-2b {margin-bottom: 2%;}
+
+/*height*/
+.h20 {height: 20px;}
+.h50 {height: 50px;}
+.h90 {height: 90px;}
+.h100 {height: 100px;}
+
+/*font-size*/
+.fz1-1 {font-size: 1.1em;}
+.fz1-2 {font-size: 1.2em;}
+.fz1-3 {font-size: 1.3em;}
+.fz1-4 {font-size: 1.4em;}
+.fz1-5 {font-size: 1.5em;}
+.fz2 {font-size: 2em;}
+.fz3 {font-size: 3em;}
+
+/*font-style*/
+.fs-il {font-style: italic;}
+
+/*font-weight*/
+.fwnm {font-weight: normal;}
+.fw700 {font-weight: 700;}
+
+/*color*/
+.c000 {color: #000;}
+.cfff {color: #fff;}
+.c333 {color: #333;}
+.c666 {color: #666;}
+.c999 {color: #999;}
+.cccc {color: #ccc;}
+
+/*border*/
+.bdt-n {border-top: none;}
+.bdb-n {border-bottom: none;}
+
+/*弹窗*/
+/****弹窗****/
+#bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #000; 
+  opacity: 0.5; 
+  filter:Alpha(opacity=50);
+}
+#pop-up {
+  position: fixed;
+  left: 25%;
+  top: 40%;
+  z-index: 10;
+  display: none;
+  padding: 10px 0;
+  width: 50%;
+  text-align: center;
+  background-color: rgba(0,0,0,.67);
+  border-radius: 5px;
+}
+#pop-up p {
+	line-height: 40px;
+	font-size: 1.3em;
+	color: #fff;
+}
+#pop-up p.p2 {font-size: 1.2em;}
+#pop-up p strong {
+	font-size: 1.3em;
+	color: #ff9202;
+}
+/*弹窗 END*/
+
+/*banner*/
+.addWrap {
+	position:relative;
+	margin:0;
+	padding:0;
+	width:100%;
+	background:#fff;
+}
+.addWrap .swipe {
+	overflow:hidden;
+	position:relative;
+	visibility:hidden;
+}
+.addWrap .swipe-wrap {
+	overflow:hidden;
+	position:relative;
+}
+.addWrap .swipe-wrap > div {
+	position:relative;
+	float:left;
+	width:100%;
+}
+
+#position {
+	position:absolute;
+	bottom:5px;
+	right:0;
+	margin:0;
+	width:100%;
+	text-align:center;
+}
+#position li {
+	display:inline-block;
+	margin:0 2px;
+	width:10px;
+	height:10px;
+	background: rgba(255,255,255,.6);
+	-webkit-border-radius:10px;
+					border-radius:10px;
+}
+#position li.cur {background-color:#01a220;} /*当前圆点颜色*/
+.img-responsive {
+	position:relative;
+	display:block;
+	max-width:100%;
+	height:auto;
+}
+/*banner END*/
+
+/*人之和APP*/
+
+/*color*/
+.c1b9dff {color: #1b9dff;}
+
+/*background-color*/
+.bgc-f3 {background-color: #f3f3f3;}
+
+/*头部*/
+.index-head {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+  background-color: #01a220;
+}
+/*头部 END*/
+
+/*底部*/
+.index-foot {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+	width: 100%;
+	height: 50px;
+	background-color: #019e1f;
+}
+.index-foot a {
+	float: left;
+	padding-top: 30px;
+	width: 33.33%;
+	height: 50px;
+	color: #fff;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center 6px;
+	-webkit-background-size: auto 24px;
+					background-size: auto 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.index-foot a.a1 {background-image: url(../images/icon_index_footer_1.png);}
+.index-foot a.a2 {
+  background-image: url(../images/icon_index_footer_2.png);
+  border-left: 1px solid #01901d;
+  border-right: 1px solid #01901d;
+}
+.index-foot a.a3 {background-image: url(../images/icon_index_footer_3.png);}
+/*底部 END*/
+
+

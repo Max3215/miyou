@@ -1,0 +1,419 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*index*/
+.index-bulletin {
+  margin-bottom: 3%;
+  padding: 10px 2%;
+  width: 96%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #fff;
+}
+.index-bulletin .img {
+  float: left;
+  width: 40px;
+  height: 30px;
+  border-right: 1px solid #ddd;
+}
+.index-bulletin .img img {
+  margin: 5px auto;
+  width: 25px;
+  height: 20px;
+}
+.index-bulletin a.a1 {
+  overflow: hidden;
+  float: left;
+  margin-left: 10px;
+  width: 66%;
+  height: 30px;
+  font-size: 1.2em;
+}
+.index-bulletin a.a2 {
+  float: right;
+  font-size: 1.2em;
+  color: #01a220;
+}
+
+/*index-pc*/
+.index-pc {
+  margin-bottom: 3%;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+.index-section-title {
+  position: relative;
+  margin: 20px 0;
+  width: 100%;
+}
+.index-section-title .border {
+  width: 100%;
+  height: 5px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.index-section-title .div1 {
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  margin-left: -50px;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.5em;
+  color: #333;
+  text-align: center;
+  background-color: #fff;
+}
+.index-section-title .div2 {
+  margin-top: 5px;
+  width: 100%;
+  font-weight: 700;
+  color: #ddd;
+  text-align: center;
+} 
+
+.index-pc ul {
+  overflow: hidden;
+  width: 100%;
+}
+.index-pc ul li {
+  float: left;
+  padding: 2%;
+  width: 50%;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.index-pc ul li:nth-child(2n+0) {border-right: none;}
+.index-pc ul li a {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+} 
+.index-pc ul li a .img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%
+}
+.index-pc ul li a .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%
+}
+.index-pc ul li a .right {
+  float: left;
+  margin-left: 6px;
+  width: 49%;
+}
+@media screen and (min-width: 360px) {
+  .index-pc ul li a .right {width: 59%;}
+}
+@media screen and (min-width: 414px) {
+  .index-pc ul li a .right {width: 65%;}
+}
+.index-pc ul li a .right p {
+  overflow: hidden;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+.index-pc ul li a .right p.p1 {font-size: 1.2em;}
+.index-pc ul li a .right p.p2 {color: #999;}
+/*index-pc end*/
+
+/*index-enter-lvc*/
+.index-enter-lvc {
+  margin-bottom: 3%;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.index-enter-lvc ul {
+  overflow: hidden;
+  width: 100%;
+}
+.index-enter-lvc ul li {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+.index-enter-lvc ul li a {
+  margin: 2%;
+  width: 96%;
+}
+.index-enter-lvc ul li a .img {
+  width: 100%;
+  height: 100px;
+}
+.index-enter-lvc ul li a .img img {
+  width: 100%;
+  height: 100%;
+}
+.index-enter-lvc ul li a .title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0 2%;
+  width: 96%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.2em;
+  color: #fff;
+  background: url(../images/bg_opacity_green50.png) repeat;
+}
+/*index-enter-lvc end*/
+
+/*index end*/
+
+/*company-profile*/
+.company-profile {
+  margin-bottom: 3%;
+  padding: 2%;
+  width: 96%;
+  background-color: #fff;
+}
+.company-profile .writings {
+  margin-top: 10px;
+  width: 100%;
+  line-height: 24px;
+  font-size: 1.1em;
+}
+/*company-profile end*/
+
+/*about-us*/
+.about-us menu a {
+  padding: 0 2%;
+  width: 96%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  background: #fff url(../images/icon_lists_go_next.png) 98% center no-repeat;
+  -webkit-background-size: auto 20px;
+          background-size: auto 20px;
+  border-bottom: 1px solid #ddd;
+}
+/*about-us end*/
+
+/*contact-us*/
+.contact-us .maps {
+  margin-bottom: 3%;
+  width: 100%;
+  height: 150px;
+}
+#allmap {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.contact-us .message-form {
+  margin-bottom: 3%;
+  width: 100%;
+  background-color: #fff;
+}
+.contact-us .message-form ul li {
+  position: relative;
+  padding: 10px 2%;
+  width: 96%;
+  border-bottom: 1px solid #ddd;
+}
+.contact-us .message-form ul li .div1 {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.2em;
+  color: #333;
+}
+.contact-us .message-form ul li .div2 {
+  padding-left: 20px;
+  line-height: 24px;
+  color: #999;
+  background: url(../images/icon_contact_us_phone.png) left center no-repeat;
+  -webkit-background-size: auto 16px;
+          background-size: auto 16px;
+} 
+.contact-us .message-form ul li.address .div2 {background-image: url(../images/icon_contact_us_position.png);}
+.contact-us .message-form ul li a {
+  position: absolute;
+  right: 2%;
+  top: 24px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.2em;
+  color: #01a220;
+  text-align: center;
+  border: 1px solid #01a220;
+  border-radius: 3px;
+}
+/*leave-message*/
+.contact-us .message-form .leave-message {
+  padding: 10px 2%;
+  width: 96%;
+}
+.contact-us .message-form .leave-message .title {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.2em;
+  color: #333;
+}
+.contact-us .message-form .leave-message input[type="text"] {
+  margin-bottom: 10px;
+  padding: 0 10px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.1em;
+  border: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.contact-us .message-form .leave-message textarea {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  width: 100%;
+  height: 80px;
+  font-size: 1.1em;
+  border: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.contact-us .message-form .leave-message input[type="submit"] {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #01a220;
+  border: none;
+}
+/*contact-us end*/
+
+/*news-lists*/
+#tab-ul-1 {
+  margin-bottom: 3%;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+#tab-ul-1 li {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+}
+#tab-ul-1 li a {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2em;
+  color: #999;
+  text-align: center;
+}
+#tab-ul-1 li.active a {color: #01a220;}
+
+#tab-ol-1 {
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+#tab-ol-1 li {display: none;}
+#tab-ol-1 li:first-child {display: block;}
+#tab-ol-1 li a {
+  padding: 10px 2%;
+  width: 96%;
+  height: 60px;
+  background: url(../images/icon_news_lists_next.png) 98% center no-repeat;
+  -webkit-background-size: auto 24px;
+          background-size: auto 24px;
+  border-bottom: 1px solid #ddd;
+}
+#tab-ol-1 li a .img {
+  float: left;
+  width: 80px;
+  height: 60px;
+}
+#tab-ol-1 li a .img img {
+  width: 100%;
+  height: 100%;
+}
+#tab-ol-1 li a .content {
+  float: left;
+  margin-left: 2%;
+  width: 60%;
+  height: 60px;
+}
+@media screen and (min-width: 360px){
+  #tab-ol-1 li a .content {width: 68%;}
+}
+#tab-ol-1 li a .content p {
+  overflow: hidden;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+#tab-ol-1 li a .content p.p1 {font-size: 1.2em;} 
+#tab-ol-1 li a .content p.p2 {color: #999;}
+/*news-lists end*/
+
+/*news-details*/
+.news-details .top-title {
+  margin-bottom: 3%;
+  padding: 10px 2%;
+  width: 96%;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.news-details .top-title .div1 {
+  width: 100%;
+  line-height: 24px;
+  font-size: 1.2em;
+}
+.news-details .top-title .div2 {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  color: #999;
+}
+
+.news-details .content {
+  padding: 10px 2%;
+  width: 96%;
+  background-color: #fff;
+}
+.news-details .content .writings-img {
+  width: 100%;
+  height: auto;
+}
+.news-details .content .writings {
+  margin-top: 10px;
+  width: 100%;
+  line-height: 24px;
+  font-size: 1.1em;
+  color: #666;
+}
+
+.news-details .up-down-group {
+  margin-bottom: 3%;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+.news-details .up-down-group a {
+  overflow: hidden;
+  padding: 0 2%;
+  width: 96%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.2em;
+  border-bottom: 1px solid #ddd;
+}
+.news-details .up-down-group a strong {color: #999;}
+/*news-details end*/

@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/*CSS Document*/
+
+/*CSS Reset*/
+html,body,div,h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,input,menu,article,section,pre {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+em,i {font-style: normal;}
+h1,h2,h3,h4,h5,strong,b {font-weight: normal;}
+body {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	font-family:"Microsoft YaHei", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #666;
+}
+div {margin: 0 auto;}
+a {
+	display: inline-block;
+	color: #666;
+	text-decoration: none;
+	cursor: pointer;
+}
+img {display: block;border: none;}
+input,select {vertical-align: middle;}
+input[type="submit"] {border: none;cursor: pointer;}
+input:focus {outline: none;}
+input,select,textarea {
+	margin: 0;
+	font-family: "Microsoft YaHei";
+	color: #666;
+	outline: none;
+}
+textarea {resize: none;}
+
+.clear {
+	overflow: hidden;
+	visibility: hidden;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+}
+
+/*margin*/
+.mb30 {margin-bottom: 30px;}
+
+/*width*/
+.w1200 {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+/*height*/
+.h35 {height: 35px;}
+.h140 {height: 140px;}
+.h250 {height: 250px;}
+
+/*line-height*/
+.lh60 {line-height: 60px;}
+
+/*color*/
+.c-999 {color: #999;}
+.c-f50112 {color: #f50112;}
+.c-f57401 {color: #f57401;}
+.c-1494ed {color: #1494ed;}
+
+/*visibility*/
+.v-h {visibility: hidden;}
+
+
+/*banner*/
+.index_banner {
+	position: relative;
+	z-index: 9;
+	overflow: hidden; 
+	float: left;
+	*+float: left;
+	width: 100%; 
+	height: 600px; 
+}
+.index_banner .hd {
+	position: absolute; 
+	left: 50%; 
+	bottom: 20px; 
+	z-index: 1; 
+	overflow: hidden;
+	margin-left: 400px;
+	height: 30px; 
+}
+.index_banner .hd ul { 
+	overflow: hidden; 
+	zoom: 1; 
+	float: left;
+	padding: 0 15px;
+	height: 30px;
+	background: url(../images/bg_opacity_whlite30.png) repeat;
+	border-radius: 30px;
+}
+.index_banner .hd ul li { 
+	float: left; 
+	margin: 7px 8px;  
+	width: 16px; 
+	height: 16px;
+	background: url(../images/bg_index_banner_point.png) center center no-repeat;
+	cursor: pointer;
+}
+.index_banner .hd ul li.on {background: url(../images/bg_index_banner_point_on.png) center center no-repeat;}
+.index_banner .bd { 
+	position: relative; 
+	z-index: 0;   
+	height: 100%; 
+}
+.index_banner .bd li { 
+	zoom: 1; 
+	vertical-align: middle; 
+}
+.index_banner .bd img {
+	display: block;  
+	width: 100%; 
+	height: 600px; 
+}
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.index_banner .prev,
+.index_banner .next { 
+	position: absolute; 
+	left: 50%; 
+	top: 50%; 
+	margin-top: -31px; 
+	margin-left: -600px;
+	display: block; 
+	width: 34px; 
+	height: 63px; 
+	background: url(../images/icon_index_banner_btn_prev.png) center center no-repeat; 
+	opacity: 0.5;   
+	filter: alpha(opacity=50);  /*IE*/
+}
+.index_banner .next { 
+	left: auto; 
+	right: 50%; 
+	margin-left: 0;
+	margin-right: -600px;
+	background: url(../images/icon_index_banner_btn_next.png) center center no-repeat;
+}
+.index_banner .prev:hover,
+.index_banner .next:hover { 
+	opacity: 1;  
+	filter: alpha(opacity=100);
+}
+.index_banner .prevStop{display: none;}
+.index_banner .nextStop{display: none;}
+/*banner END*/
+
+/*右侧浮动导航*/
+.floatbox {
+	z-index:89;
+	position:fixed;
+	width:42px;
+	top:30%;
+	right:5px;
+	_display:none;
+}
+.floatbox a {
+	margin-bottom: 2px;
+	display: block;
+	width: 42px;
+	height: 42px;
+}
+.floatbox span {
+	position:absolute;
+	right:45px;
+	top:0;
+	display:none;
+}
+.floatbox .phone_num {
+	top: 132px;
+	width: 120px;
+  height: 60px;
+}
+.floatbox .weixin {
+	top: 44px;
+	width: 122px;
+  height: 122px;
+}
+.floatbox strong {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	background-color: #b5151d;
+	border-radius: 50%;
+}
+.floatbox a .img2 {display: none;}
+.floatbox a:hover .img1 {display: none;}
+.floatbox a:hover .img2 {display: block;}
+
+.floatbox a:hover span {display:block;}
+@media screen and (max-width:1150px) {
+	.floatbox { display:none;}
+}
+/*右侧浮动导航 END*/
+
+/*南川蜜柚PC*/
+
+/*index-header*/
+.index-header .index-nav {
+	position: absolute;
+	left: 50%;
+	top: 60px;
+	z-index: 10;
+	margin-left: -600px;
+	padding: 1px;
+	width: 1198px;
+	height: 58px;
+	background: url(../images/bg_index_top_nav_1.png) center center no-repeat;
+	border-radius: 5px;
+}
+.index-header .index-nav a.index-logo {
+	float: left;
+	margin-left: 10px;
+	width: 330px;
+	height: 58px;
+}
+.index-header .index-nav a.index-logo img {
+	width: 100%;
+	height: 100%;
+}
+.index-header .index-nav ul {
+	float: right;
+	width: 750px;
+	height: 58px;
+}
+.index-header .index-nav ul li {
+	float: left;
+	width: 125px;
+	height: auto;
+	text-align: center;
+	background: url(../images/bg_index_nav_border.png) left center no-repeat;
+}
+.index-header .index-nav ul li a.a1 {
+	padding: 10px 0;
+	width: 100%;
+	height: 38px;
+}
+.index-header .index-nav ul li a.a1 div {
+	line-height: 20px;
+	color: #000;
+}
+.index-header .index-nav ul li a.a1 p {
+	line-height: 18px;
+	font-size: 12px;
+	color: #fff;
+}
+
+/*nav*/
+.index-header .index-nav ul li nav {
+	display: none;
+	margin-top: 5px;
+	padding: 5px 0;
+	width: 123px;
+	text-align: center;
+	border: 1px solid #fff;
+	background: url(../images/bg_index_dropdown_menu.png) repeat;
+	border-radius: 3px;
+}
+.index-header .index-nav ul li nav a {
+	display: block;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	color: #000;
+}
+.index-header .index-nav ul li nav a:hover {background: url(../images/bg_opacity_whlite40.png) repeat;} 
+
+.index-header .index-nav ul li:hover a.a1 {background: url(../images/bg_opacity_whlite40.png) repeat;} 
+.index-header .index-nav ul li:hover nav {display: block;}
+
+
+/*index-header end*/
+
+/*index-footer*/
+
+/*index-footer end*/
+
+/*南川蜜柚PC END*/
